@@ -1,21 +1,24 @@
 # Video Service
 
-## How to run
-
-__You do not use "jettyRun" to launch this application. Please read these instructions__
-
 ###To run the application:
-Right-click on the Application class in the com.ariesmcrae.videoservice package, Run As->Java Application
+From command prompt: ./gradlew run or gradlew.bat run
+From Eclipse: Right-click on the Application class in the com.ariesmcrae.videoservice package, Run As->Java Application
 
 ###To stop the application:
-Open the Eclipse Debug Perspective (Window->Open Perspective->Debug), right-click on the application in the "Debug" view (if it isn't open, Window->Show View->Debug) and select Terminate
+* From command prompt: CTRL + C
+* From Eclipse: Open the Eclipse Debug Perspective (Window->Open Perspective->Debug), right-click on the application in the "Debug" view (if it isn't open, Window->Show View->Debug) and select Terminate
 
-## Overview
+### Unit Test
+* From command prompt: ./gradlew build or gradlew.bat build
+* From Eclipse: VideoServiceControllerTest->Run As->JUnit Test to launch the test. 
+Eclipse will report which tests pass or fail.
+
+### Overview
 * Application for uploading video to a cloud service.
 * Manages video's metadata.
 
 
-## Instructions
+### Instructions
 GET /video
    - Returns the list of videos that have been added to the
      server as JSON. The list of videos (for now) is not 
@@ -51,7 +54,5 @@ GET /video/{id}/data
      identifier. If no mpeg data has been uploaded for the specified video,
      then the server should return a 404 status code.
      
-## Unit Test
-VideoServiceControllerTest->Run As->JUnit Test to launch the test. 
-Eclipse will report which tests pass or fail.
+
 
