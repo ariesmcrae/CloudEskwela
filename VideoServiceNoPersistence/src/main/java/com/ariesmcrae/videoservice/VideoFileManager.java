@@ -34,7 +34,6 @@ import com.ariesmcrae.videoservice.model.Video;
  * methods for saving videos and retrieving their binary data.
  * 
  * @author j.white
- *
  */
 public class VideoFileManager {
 
